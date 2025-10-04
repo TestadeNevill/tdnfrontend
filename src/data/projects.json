@@ -1,0 +1,20 @@
+[
+  {
+    "id": "transshipment",
+    "title": "Transshipment Hub Optimizer",
+    "summary": "SaaS simulation for freight routing, EV charging and AI-driven logistics.",
+    "link": ""
+  },
+  {
+    "id": "bess",
+    "title": "Battery Storage Site Models",
+    "summary": "Financial models for 5\u2013100 MW storage with ITC adders and interconnection paths.",
+    "link": ""
+  },
+  {
+    "id": "dashboard",
+    "title": "Urban Data Dashboard",
+    "summary": "React-based live dashboard: weather, AQI, traffic, EV charging layers.",
+    "link": ""
+  }
+]
