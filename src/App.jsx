@@ -11,6 +11,7 @@ import TransitHubs from './pages/blog/TransitHubs.jsx'
 import EVTOL from './pages/blog/EVTOL.jsx'
 import Thanks from './pages/Thanks.jsx'
 import SolarStorage from './pages/blog/SolarStorage.jsx'
+import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
 
 export default function App() {
   return (
@@ -28,7 +29,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/blog/solar-storage-at-scale" element={<SolarStorage />} />
-        
+        <Route path="/blog/intelligent-urbanism-10-principles" element={<IntelligentUrbanism />} />
       </Routes>
       </main>
       <Footer />

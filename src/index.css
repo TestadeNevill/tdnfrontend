@@ -5,3 +5,15 @@
 .container-page { @apply min-h-screen px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed; }
 .card { @apply rounded-xl border border-gray-200 bg-white shadow-sm; }
 .link { @apply text-green-700 hover:underline; }
+
+@layer utilities {
+  /* default: show video, hide image */
+  .hero-wh-desktop { display: block; }
+  .hero-wh-mobile  { display: none; }
+
+  /* when screen is smaller than 768 x 1024: show image, hide video */
+  @media (max-width: 768px) and (max-height: 1024px) {
+    .hero-wh-desktop { display: none; }
+    .hero-wh-mobile  { display: block; }
+  }
+}

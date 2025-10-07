@@ -8,6 +8,15 @@ export const blogPosts = [
     image: "/assets/solarbatteryproject.png",
     link: "/blog/solar-storage-at-scale",
   },
+    {
+    slug: "intelligent-urbanism-12-principles",
+    title: "The 10 Principles of Intelligent Urbanism",
+    date: "June 2025",
+    excerpt:
+      "A practical framework to balance ecology, culture, equity, and economy—turning principles into projects with measurable impact.",
+    image: "/assets/PIU.jpg",
+    link: "/blog/intelligent-urbanism-10-principles",
+  },
   {
     slug: "transshipment",
     title: "Transshipment & the City: Building the Hubs that Move People, Goods, and Data",
