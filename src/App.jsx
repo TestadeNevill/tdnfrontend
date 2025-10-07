@@ -19,8 +19,9 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
        <main className="flex-1 flex flex-col">
+                <VercelSPAView />
       <Routes>
-        <VercelSPAView />
+
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/blog/solar-storage-at-scale" element={<SolarStorage />} />
         <Route path="/blog/intelligent-urbanism-10-principles" element={<IntelligentUrbanism />} />
+
       </Routes>
       </main>
       <Footer />
