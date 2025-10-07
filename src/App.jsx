@@ -12,6 +12,7 @@ import EVTOL from './pages/blog/EVTOL.jsx'
 import Thanks from './pages/Thanks.jsx'
 import SolarStorage from './pages/blog/SolarStorage.jsx'
 import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
+import VercelSPAView from './analytics/VercelSPAView.jsx'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Navbar />
        <main className="flex-1 flex flex-col">
       <Routes>
+        <VercelSPAView />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
