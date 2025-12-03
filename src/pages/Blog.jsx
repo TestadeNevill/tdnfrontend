@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom'
 import { blogPosts } from '../data/blogPosts.js'
+import Donations from '../components/Donations.jsx'
+// import {Donations} from '../components/Donations.jsx'
 
 export default function Blog() {
   return (
+
     <section className="container-page space-y-8">
       <h2 className="text-3xl font-bold text-gray-900">Blog</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -22,9 +25,16 @@ export default function Blog() {
               <p className="text-sm text-gray-700 mt-2">{post.excerpt}</p>
               <Link to={post.link} className="link text-sm mt-3 inline-block">Read →</Link>
             </div>
+              
           </article>
+        
         ))}
       </div>
+  
+          <Donations></Donations>
     </section>
+
+
+    
   )
 }

@@ -46,4 +46,13 @@ export const blogPosts = [
     image: "/assets/EVTOL DTLA.png",
     link: "/blog/evtol-urban-air-mobility",
   },
+      {
+    slug: "real-estate-reconsolidation",
+    title: "The solution to long term equitable housing and urban redevelopment.",
+    date: "November 2025",
+    excerpt:
+      "A process of real estate development, that converts blocks of housing inventory into high rise mixed and residential communities",
+    image: "/assets/Urban_Greenery_Utopia.jpg",
+    link: "/blog/real-estate-consolidation",
+  },
 ]

@@ -13,6 +13,7 @@ import Thanks from './pages/Thanks.jsx'
 import SolarStorage from './pages/blog/SolarStorage.jsx'
 import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
 import VercelSPAView from './analytics/VercelSPAView.jsx'
+import RealEstateConsolidation from './pages/blog/RealEstateConsolidation.jsx'
 
 export default function App() {
   return (
@@ -33,6 +34,7 @@ export default function App() {
         <Route path="/thanks" element={<Thanks />} />
         <Route path="/blog/solar-storage-at-scale" element={<SolarStorage />} />
         <Route path="/blog/intelligent-urbanism-10-principles" element={<IntelligentUrbanism />} />
+        <Route path="/blog/real-estate-consolidation" element={<RealEstateConsolidation />} />
 
       </Routes>
       </main>
