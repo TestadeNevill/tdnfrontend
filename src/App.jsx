@@ -14,6 +14,7 @@ import SolarStorage from './pages/blog/SolarStorage.jsx'
 import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
 import VercelSPAView from './analytics/VercelSPAView.jsx'
 import RealEstateConsolidation from './pages/blog/RealEstateConsolidation.jsx'
+import Ideas from './pages/Ideas.jsx'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
 
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/ideas" element={<Ideas />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/transshipment" element={<Transshipment />} />

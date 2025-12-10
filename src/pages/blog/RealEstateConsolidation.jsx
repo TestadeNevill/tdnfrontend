@@ -34,11 +34,10 @@ export default function RealEstateConsolidation() {
           <li>Reengineer mixed use development projects into a repeatable products that produces economies of scale in growth. </li>
         </ul>
       </aside>
-
+<div>
 <h1>COMING SOON!</h1>
+</div>
 
-<break></break>
-      Back link
       <Link to="/blog" className="text-green-700 hover:underline text-sm block">
         ← Back to Blog
       </Link>

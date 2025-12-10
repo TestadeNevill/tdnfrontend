@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
+
 const About = () => {
   return (
     <section className="min-h-screen bg-white px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed space-y-12">
       {/* Heading */}
       <h2 className="text-4xl font-bold text-emerald-800 mb-2 text-center">About Me</h2>
-      <p className="text-center text-gray-500 -mt-2">Urban systems • Energy storage • Software</p>
+      <p className="text-center text-gray-500 -mt-2">Urban Systems • Technology • Human Scale</p>
 
       {/* Section 1: Image Right with Wrapped Text */}
       <div className="relative">
@@ -14,40 +17,25 @@ const About = () => {
         />
 
         <p>
-          I’ve always looked at cities from a bird’s-eye view—panning maps, imagining where future systems
+          My name is Datesta Nickle but you can call me "Testa". I grew up playing SimCity2000 as a kid and since then I’ve always looked at cities from a bird’s-eye view. Panning maps, imagining where future systems
           should go, how they would look, and how they would function. Over the years I’ve shaped my career
-          around building those systems through zoning, real estate, site acquisition, and most recently energy storage.
+          around building those systems through zoning, real estate and renewable development.
         </p>
 
         <p className="mt-3">
-          I’m passionate about designing regenerative, intelligent cities that work logistically, socially, and
-          ecologically. From working with zoning and local communities to deploying clean-energy assets, I’ve
-          seen how technology and planning must integrate to build long-term resilience. Whether it’s battery
-          storage in urban cores or transforming transportation nodes with transit-oriented development, I work
-          at the intersection of vision and implementation.
+          I have a knack for finding maps and imagining where infrastructure should be built, tracing lines for transit routes and envisioning the walkable spaces that allow neighborhoods to thrive. 
+          Once I began working, I established a panoptic view of what is needed for communities to be "ideally" developed, not just physically but institutionally. 
+          I discovered our processes and solutions to develop infrastructure were inefficient, archaic and extremely slow, large scale projects were non inclusive to the communities they directly impacted and designing for the human scale were limited or nonexistent. 
+    
         </p>
 
-        <div className="mt-4">
-          <p className="font-semibold text-gray-900">Selected experience:</p>
-          <ul className="list-disc list-inside marker:text-emerald-600 text-gray-700">
-            <li>
-              <strong className="text-gray-900">New Haven City Planning Department</strong> — contributed to zoning code design and reviewed planning applications.
-            </li>
-            <li>
-              <strong className="text-gray-900">NineDot Energy</strong> — supported development of distributed battery storage projects across New York City.
-            </li>
-            <li>
-              <strong className="text-gray-900">Smartlink LLC</strong> — led site acquisition for NYC DEP rooftop antenna installs enabling remote water-meter readings.
-            </li>
-            <li>
-              <strong className="text-gray-900">Solomon Energy</strong> — guided clients in reducing energy costs through strategic clean-infrastructure investments.
-            </li>
-          </ul>
-        </div>
+                <p className="mt-3">In order to create sustainable, well designed communities there was a long list of <Link to={"/ideas"} className="link mt-3 inline-block">ideas</Link> for inventions that must be created and processes that must be improved.</p>
+
 
         <p className="mt-3">
-          I combine real estate, software development, AI/automation, and city planning to create holistic systems
-          that respond to local needs and global futures. Every project is rooted in clarity, impact, and scale.
+          These are techonologies and processes I plan on keeping an eye on, advocating for, and working on in this later half of my career. The best approach now is to write about it. 
+          I want to discuss, the lastest software, inventions, practicies and methologies that create the "ideal" kinds of development. Developments that focus on the needs of every day people, produce
+          the most effiecent routes for passengers and cargo, and create spaces that faciliate both privacy and vibrate interactions. Designing spaces is an art that takes many eyes to deem it beautuful. 
         </p>
 
         <div className="clear-both" />
@@ -62,15 +50,15 @@ const About = () => {
         />
 
         <p>
-          My next chapter focuses on resilient urban systems centered on <strong>transshipment</strong>—using data,
-          automation, and sustainable design to move people and goods efficiently. I’m exploring AI-assisted infrastructure,
-          autonomous rail hubs, modular housing, and regenerative TOD to unlock cleaner, faster, more equitable cities.
+          People need to be at the center of the spaces we desire to create. Not
+          the car and parking spaces, not projected earnings for investors. A cohesive enivornment that enables every day inhabitiants to move freely, maintain accesses to vital, leisure, and recreational establishments, while 
+          living in functional spaces consuming quality food, air and water.
         </p>
 
         <p className="mt-3">
-          Ultimately, I’m committed to shaping the infrastructure of the future—where visionary design meets practical
-          execution. By pairing data-driven insight with creative problem-solving, I build systems that are efficient
-          and forward-thinking, yet grounded in community needs and climate resilience—with durable value at their core.
+          Ultimately, I’m committed to reshaping the infrastructure of the future—where visionary design meets practical
+          execution. By pairing these techonologies, as well as many others, with creative problem solving, We can build systems that are efficient
+          and forward thinking, yet grounded in community needs and climate resilience with durable value at their core.
         </p>
 
         <div className="clear-both" />

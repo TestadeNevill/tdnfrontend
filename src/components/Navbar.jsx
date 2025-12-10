@@ -11,6 +11,8 @@ export default function Navbar() {
         <div className="flex gap-1">
           <NavLink to="/" end className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Home</NavLink>
           <NavLink to="/about" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>About</NavLink>
+          <NavLink to="/ideas" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Ideas</NavLink>
+
           {/* <NavLink to="/projects" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Projects</NavLink> */}
           <NavLink to="/blog" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Blog</NavLink>
           <NavLink to="/contact" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Contact</NavLink>
