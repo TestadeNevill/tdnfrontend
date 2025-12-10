@@ -57,7 +57,7 @@ const About = () => {
 
         <p className="mt-3">
           Ultimately, I’m committed to reshaping the infrastructure of the future—where visionary design meets practical
-          execution. By pairing these techonologies, as well as many others, with creative problem solving, We can build systems that are efficient
+          execution. By pairing these techonologies, as well as many others, with creative problem solving, we can build systems that are efficient
           and forward thinking, yet grounded in community needs and climate resilience with durable value at their core.
         </p>
 
