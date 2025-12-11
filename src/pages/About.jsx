@@ -25,11 +25,11 @@ const About = () => {
         <p className="mt-3">
           I have a knack for finding maps and imagining where infrastructure should be built, tracing lines for transit routes and envisioning the walkable spaces that allow neighborhoods to thrive. 
           Once I began working, I established a panoptic view of what is needed for communities to be "ideally" developed, not just physically but institutionally. 
-          I discovered our processes and solutions to develop infrastructure were inefficient, archaic and extremely slow, large scale projects were non inclusive to the communities they directly impacted and designing for the human scale were limited or nonexistent. 
+          I discovered our processes and solutions to develop infrastructure are inefficient, archaic and extremely slow, large scale projects are non inclusive to the communities they directly impact and designing for the human scale is limited or nonexistent. 
     
         </p>
 
-                <p className="mt-3">In order to create sustainable, well designed communities there was a long list of <Link to={"/ideas"} className="link mt-3 inline-block">ideas</Link> for inventions that must be created and processes that must be improved.</p>
+                <p className="mt-3">In order to create sustainable, well designed communities there is a long list of <Link to={"/ideas"} className="link mt-3 inline-block">ideas</Link> of technologies that must be created or improved and processes that ought to be redesigned.</p>
 
 
         <p className="mt-3">
@@ -51,8 +51,7 @@ const About = () => {
 
         <p>
           People need to be at the center of the spaces we desire to create. Not
-          the car and parking spaces, not projected earnings for investors. A cohesive enivornment that enables every day inhabitiants to move freely, maintain accesses to vital, leisure, and recreational establishments, while 
-          living in functional spaces consuming quality food, air and water.
+          the car and parking spaces, not projected earnings for investors. A cohesive enivornment that enables every inhabitiant to move freely, maintain access to vital, leisure, and recreational establishments, live in commodious and functional spaces, and consume quality food, air and water.
         </p>
 
         <p className="mt-3">

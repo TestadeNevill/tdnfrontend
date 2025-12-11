@@ -7,7 +7,8 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
       <div className="max-w-5xl mx-auto px-4 md:px-10 h-14 flex items-center justify-between">
-        <div className="font-bold tracking-wide text-gray-900">Testa De Nevill</div>
+        {/* Chamhe testadenevill to image, graphic/city building animation */}
+        <div className="font-bold tracking-wide text-gray-900">Testa De Nevill</div> 
         <div className="flex gap-1">
           <NavLink to="/" end className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>Home</NavLink>
           <NavLink to="/about" className={({isActive}) => `${linkBase} ${isActive?active:inactive}`}>About</NavLink>
