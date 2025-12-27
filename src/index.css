@@ -15,5 +15,6 @@
   @media (max-width: 768px) and (max-height: 1024px) {
     .hero-wh-desktop { display: none; }
     .hero-wh-mobile  { display: block; }
+    /* Navbar Hamburger & Display video, same as desktop */
   }
 }

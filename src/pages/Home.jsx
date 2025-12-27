@@ -57,7 +57,7 @@ export default function Home() {
   };
 
   return (
-    <section className="relative h-[60svh] md:h-[80svh] overflow-hidden flex items-center">
+    <section className="relative min-h-[60dvh] md:min-h-[80vh] overflow-hidden flex items-center">
       {/* Background media */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {!videoFailed ? (
@@ -69,7 +69,8 @@ export default function Home() {
             playsInline
             preload="metadata"
             poster="/assets/hero-poster.jpg"
-            className="w-full h-full object-contain md:object-cover bg-black"
+            className="w-full h-full object-cover scale-105 md:scale-100 bg-black"
+
             aria-hidden="true"
           >
             <source src="/assets/hero-video.mp4" type="video/mp4" />
