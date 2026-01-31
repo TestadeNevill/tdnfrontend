@@ -2,7 +2,7 @@ export const blogPosts = [
        {
     slug: "real-estate-reconsolidation",
     title: "The solution to long term equitable housing and urban redevelopment.",
-    date: "December 2025",
+    date: "March 2026",
     excerpt:
       "A process of real estate development, that converts blocks of housing inventory into high rise mixed and residential communities",
     image: "/assets/Urban_Greenery_Utopia.jpg",

@@ -10,7 +10,7 @@ export default function RealEstateConsolidation() {
         <h1 className="text-4xl font-bold text-green-800">
           Real Estate Consolidation
         </h1>
-        <p className="text-sm text-gray-500">By Testa DeNevill · November 2025</p>
+        <p className="text-sm text-gray-500">By Testa DeNevill · January 2026</p>
       </header>
 
       {/* Hero image */}
