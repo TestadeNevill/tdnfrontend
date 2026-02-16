@@ -34,10 +34,10 @@ const Ideas = () => {
 </div>
 <ul className="list-disc list-inside marker:text-emerald-600 text-gray-700">
     <li>
-  <strong className="text-emerald-800">Streamline Permitting</strong> — A process that makes getting any and all infrastructure development approvals simpler and faster. The future of cities depend on governments and agencies ability to review applications and proposals, provide guidelines and submissions through online portals and digital platforms. Improved approval times can attract investment by making the development process more attractive, reduce costs by cutting delays and legal fees, faster project completetion and improved transparency. 
+  <strong className="text-emerald-800">Streamline Permitting</strong> — A process that makes getting any and all infrastructure development approvals simpler and faster. The future of cities depends on governments and agencies ability to review applications and proposals, provide guidelines and submissions through online portals and digital platforms. Improved approval times can attract investment by making the development process more attractive, reduce costs by cutting delays and legal fees, faster project completion and improved transparency. 
 </li>
   <li>
-  <strong className="text-emerald-800">Digital Community Engagement</strong> — An online platform that allows community and government a central location to engage, receive important updates and build trust through transparency. This wil be a vital tool that acts as an additional to in person participation and events for new development projects, land use plans and ordinances changes, as well as important advisories. This platform can also be used to submit services requests and applications, provide an overview of government spending and voting.
+  <strong className="text-emerald-800">Digital Community Engagement</strong> — An online platform that allows community and government a central location to engage, receive important updates and build trust through transparency. This will be a vital tool that acts as an addition to in person participation and events for new development projects, land use plans and ordinances changes, as well as important advisories. This platform can also be used to submit services requests and applications, provide an overview of government spending and voting.
 </li>
 </ul>
 <div className="text-2xl text-emerald-800 font-semibold">
@@ -45,7 +45,7 @@ const Ideas = () => {
           </div>
           <ul className="list-disc list-inside marker:text-emerald-600 text-gray-700">
   <li>
-  <strong className="text-emerald-800">Energy Generation</strong> — Energy generation is fundamentally the most vital resource as we advance from the third to fourth industrial revolution. The neccessity of producing power from renewable and or efficient sources embedded into city infrastructure. It involves the advancement in efficiencies of all forms of energy generation paired with storage, reliability, and distributed grid flexibility. Its impact is cleaner and more resilient energy systems that support next-generation cities. The need for energy now is fueled mainly now by the demands of AI which dictate the progression of the Internet of Things (IOT), big data analytics, advanced robotics, and more, all of which contribute to smarter cities. 
+  <strong className="text-emerald-800">Energy Generation</strong> — Energy generation is fundamentally the most vital resource as we advance from the third to fourth industrial revolution. The necessity of producing power from renewable and or efficient sources embedded into city infrastructure. It involves the advancement in efficiencies of all forms of energy generation paired with storage, reliability, and distributed grid flexibility. Its impact is cleaner and more resilient energy systems that support next-generation cities. The need for energy now is fueled mainly by the demands of AI which dictate the progression of the Internet of Things (IOT), big data analytics, advanced robotics, and more, all of which contribute to smarter cities. 
 </li>
 
 <li>
