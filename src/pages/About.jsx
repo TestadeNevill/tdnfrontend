@@ -5,7 +5,7 @@ const About = () => {
     <section className="min-h-screen bg-white max-w-5xl mx-auto px-4 sm:px-6 md:px-10 pt-6 pb-20 text-gray-800 text-lg leading-relaxed space-y-16">
       {/* Heading */}
       <header className="text-center">
-        <h2 className="text-4xl font-bold text-emerald-800">About Me</h2>
+        <h2 className="text-4xl font-bold text-primary-800">About Me</h2>
         <p className="text-gray-500 mt-1">Urban Systems • Technology • Human Scale</p>
       </header>
 

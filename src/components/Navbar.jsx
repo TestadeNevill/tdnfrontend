@@ -7,9 +7,9 @@ export default function Navbar() {
   const linkBase =
     "block px-3 py-2 rounded-md text-sm font-medium transition";
   const inactive =
-    "text-gray-700 hover:text-green-700 hover:bg-green-50";
+    "text-gray-700 hover:text-primary-700 hover:bg-primary-50";
   const active =
-    "text-green-800 bg-green-50";
+    "text-primary-800 bg-primary-50";
 
   return (
     <nav className="sticky top-0 z-20 border-b border-gray-200 bg-white/90 backdrop-blur">
@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-600"
+          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-600"
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(!open)}

@@ -41,7 +41,7 @@ const Ideas = () => {
 </li>
 </ul>
 <div className="text-2xl text-emerald-800 font-semibold">
-          <p className="font-semibold text-emerald-800">Necessary Equipment:</p>
+          <h1 className="font-semibold text-emerald-800">Necessary Equipment:</h1>
           </div>
           <ul className="list-disc list-inside marker:text-emerald-600 text-gray-700">
   <li>

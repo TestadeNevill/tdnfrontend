@@ -9,7 +9,7 @@ export default function NotFound() {
       </p>
       <Link
         to="/"
-        className="inline-block mt-6 text-green-700 hover:underline font-medium"
+        className="inline-block mt-6 text-primary-700 hover:underline font-medium"
       >
         ← Back to home
       </Link>

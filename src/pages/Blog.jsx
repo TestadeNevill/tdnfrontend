@@ -10,12 +10,12 @@ export default function Blog() {
       <h2 className="text-3xl font-bold text-gray-900">Blog</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {blogPosts.map(post => (
-          <article key={post.slug} className="card overflow-hidden">
-            <Link to={post.link}>
+          <article key={post.slug} className="card overflow-hidden transition-shadow duration-200 hover:shadow-lg">
+            <Link to={post.link} className="block group">
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover transition-transform duration-200 group-hover:scale-105"
                 onError={(e) => { e.currentTarget.src = `https://via.placeholder.com/1200x630?text=${encodeURIComponent(post.title)}` }}
               />
             </Link>
