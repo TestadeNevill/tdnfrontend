@@ -8,7 +8,7 @@ const Ideas = () => {
  <section className="min-h-screen bg-white px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed space-y-12">
 
       <h2 className="text-4xl font-bold text-emerald-800 mb-2 text-center">Ideas</h2>
-      <p className="text-center text-gray-500 -mt-2">Electromagnetic Energy • Transhhipment • Automation</p>
+      <p className="text-center text-gray-500 -mt-2">Electromagnetic Energy • Transshipment • Automation</p>
 
 <img
   src="/assets/Cityscape Italian Futurism.jpg"
@@ -34,7 +34,7 @@ const Ideas = () => {
 </div>
 <ul className="list-disc list-inside marker:text-emerald-600 text-gray-700">
     <li>
-  <strong className="text-emerald-800">Streamline Permitting</strong> — A process that makes getting any and all infrastructure development approvals simpler and faster. The future of cities depend on governments and agencies ability to review applications and proposals, provide guidelines and submissions through online portals and digital platforms. Improved apporval times means can attract investment by making the development process more attractive, reduce costs by cutting delays and legal fees, faster project completetion and improved transparency. 
+  <strong className="text-emerald-800">Streamline Permitting</strong> — A process that makes getting any and all infrastructure development approvals simpler and faster. The future of cities depend on governments and agencies ability to review applications and proposals, provide guidelines and submissions through online portals and digital platforms. Improved approval times can attract investment by making the development process more attractive, reduce costs by cutting delays and legal fees, faster project completetion and improved transparency. 
 </li>
   <li>
   <strong className="text-emerald-800">Digital Community Engagement</strong> — An online platform that allows community and government a central location to engage, receive important updates and build trust through transparency. This wil be a vital tool that acts as an additional to in person participation and events for new development projects, land use plans and ordinances changes, as well as important advisories. This platform can also be used to submit services requests and applications, provide an overview of government spending and voting.

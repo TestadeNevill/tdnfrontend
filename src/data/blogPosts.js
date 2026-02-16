@@ -1,6 +1,6 @@
 export const blogPosts = [
        {
-    slug: "real-estate-reconsolidation",
+    slug: "real-estate-consolidation",
     title: "The solution to long term equitable housing and urban redevelopment.",
     date: "March 2026",
     excerpt:

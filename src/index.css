@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
 .container-page { @apply min-h-screen px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed; }
 .card { @apply rounded-xl border border-gray-200 bg-white shadow-sm; }
 .link { @apply text-green-700 hover:underline; }

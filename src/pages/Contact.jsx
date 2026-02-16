@@ -76,7 +76,7 @@ export default function Contact() {
   }
 
   return (
-    <section className=" aspect-square container-page">
+    <section className="container-page">
       <h2 className="text-3xl font-bold text-gray-900 mb-2">Contact</h2>
   <p className="text-gray-700 mb-6 text-2xl font-semibold">Let&apos;s Connect!</p>
 
