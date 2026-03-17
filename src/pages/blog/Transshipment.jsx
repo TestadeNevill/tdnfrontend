@@ -11,7 +11,7 @@ export default function Transshipment() {
         <h1 className="text-4xl font-bold text-green-800">
           Transshipment & the City: Building the Hubs that Move People, Goods, and Data
         </h1>
-        <p className="text-sm text-gray-500">By Testa DeNevill · October 2025</p>
+        <p className="text-sm text-gray-500">By Testa de Nevill · October 2025</p>
       </header>
 
       {/* Hero */}

@@ -12,7 +12,7 @@ export default function IntelligentUrbanism() {
         </h1>
 
         <div className="flex items-center justify-between">
-          <p className="text-sm text-gray-500">By Testa DeNevill · October 2025</p>
+          <p className="text-sm text-gray-500">By Testa de Nevill · October 2025</p>
     
         </div>
       </header>

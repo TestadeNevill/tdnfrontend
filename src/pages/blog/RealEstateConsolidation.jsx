@@ -10,7 +10,7 @@ export default function RealEstateConsolidation() {
         <h1 className="text-4xl font-bold text-green-800">
           Real Estate Consolidation
         </h1>
-        <p className="text-sm text-gray-500">By Testa DeNevill · January 2026</p>
+        <p className="text-sm text-gray-500">By Testa de Nevill · January 2026</p>
       </header>
 
       {/* Hero image */}
@@ -31,7 +31,7 @@ export default function RealEstateConsolidation() {
           <li>Introduce "elderhood" in cities to retain local residents while creating community spaces and utilities that match the needs of locals.</li>
           <li>The limitations of standard zoning ordinances and the importance of flexible development regulations and processes and emphasizing the benefits of focusing on pedestrian oriented walkways.</li>
           <li>Transforming an outdated housing stock into sustainable developments that increases private and public ownership.</li> 
-          <li>Reengineer mixed use development projects into a repeatable products that produces economies of scale in growth. </li>
+          <li>Reengineer mixed use development projects into a repeatable product that produces economies of scale in growth. </li>
         </ul>
       </aside>
 <div>

@@ -5,7 +5,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   const linkBase =
-    "block px-3 py-2 rounded-md text-sm font-medium transition";
+    "block px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out";
   const inactive =
     "text-gray-700 hover:text-primary-700 hover:bg-primary-50";
   const active =
@@ -18,7 +18,7 @@ export default function Navbar() {
         {/* Brand */}
         <NavLink
           to="/"
-          className="flex items-center gap-2 min-w-0"
+          className="flex items-center gap-2 min-w-0 transition-opacity duration-200 hover:opacity-80"
           aria-label="Home"
         >
           {/* Optional logo image */}
@@ -34,7 +34,7 @@ export default function Navbar() {
           <span className="font-bold tracking-wide text-gray-900 
                            text-sm sm:text-base md:text-lg
                            whitespace-nowrap truncate">
-            Testa De Nevill
+            Testa de Nevill
           </span>
         </NavLink>
 
@@ -60,7 +60,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-600"
+          className="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-600 transition-colors duration-200"
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(!open)}

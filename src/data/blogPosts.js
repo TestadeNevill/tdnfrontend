@@ -41,7 +41,7 @@ export const blogPosts = [
 
 
     {
-    slug: "intelligent-urbanism-12-principles",
+    slug: "intelligent-urbanism-10-principles",
     title: "The 10 Principles of Intelligent Urbanism",
     date: "June 2025",
     excerpt:

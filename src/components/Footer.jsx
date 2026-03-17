@@ -19,7 +19,7 @@ export default function Footer() {
           ))}
         </nav>
         <p className="text-sm text-gray-500 text-center md:text-left">
-          © {new Date().getFullYear()} Testa De Nevill • Vite + React • Deployed on Vercel
+          © {new Date().getFullYear()} Testa de Nevill • Vite + React • Deployed on Vercel
         </p>
       </div>
     </footer>

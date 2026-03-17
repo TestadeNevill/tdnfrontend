@@ -7,7 +7,7 @@ export default function EVTOL() {
         <h1 className="text-4xl font-bold text-green-800">
           eVTOL and the Future of Cities: Building the Infrastructure for Urban Air Mobility
         </h1>
-        <p className="text-sm text-gray-500">By Testa DeNevill · October 2025</p>
+        <p className="text-sm text-gray-500">By Testa de Nevill · October 2025</p>
       </header>
 
       <img

@@ -12,7 +12,7 @@ export default function TransitHubs() {
         <h1 className="text-4xl font-bold text-green-800">
           Reimagining Transit Hubs: The Future of Connected Cities
         </h1>
-        <p className="text-sm text-gray-500">By Testa DeNevill · October 2025</p>
+        <p className="text-sm text-gray-500">By Testa de Nevill · October 2025</p>
       </header>
 
       {/* Hero image */}

@@ -11,7 +11,7 @@ export default function Donations() {
       <a
         href="https://buy.stripe.com/7sYaEYbjA7vT8aifx86Na03"
         target="_blank"
-        className="inline-block px-5 py-3 border-2 border-primary-400 text-primary-800 rounded-lg font-semibold hover:bg-primary-100 transition"
+        className="inline-block px-5 py-3 border-2 border-primary-400 text-primary-800 rounded-lg font-semibold hover:bg-primary-100 transition-all duration-200 active:scale-[0.98]"
       >
         Donate with Stripe
       </a>
