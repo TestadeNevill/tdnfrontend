@@ -24,3 +24,32 @@
     /* Navbar Hamburger & Display video, same as desktop */
   }
 }
+
+/* Infrastructure Intelligence Labs — canvas grid + ambient wash */
+.labs-root {
+  @apply text-labs-text bg-labs-bg w-full relative overflow-hidden;
+}
+.labs-root--fill {
+  @apply min-h-[calc(100vh-3.5rem)];
+}
+.labs-root::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    ellipse 90% 55% at 50% -5%,
+    rgba(15, 23, 42, 0.06),
+    transparent 52%
+  );
+}
+.labs-grid-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.labs-root a {
+  @apply text-labs-accent hover:text-labs-glow transition-colors;
+}

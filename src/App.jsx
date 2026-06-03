@@ -17,6 +17,7 @@ import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
 import VercelSPAView from './analytics/VercelSPAView.jsx'
 import RealEstateConsolidation from './pages/blog/RealEstateConsolidation.jsx'
 import Ideas from './pages/Ideas.jsx'
+import LabsHome from './labs/pages/LabsHome.jsx'
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/ideas" element={<Ideas />} />
+            <Route path="/labs" element={<LabsHome />} />
             {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/transshipment" element={<Transshipment />} />
