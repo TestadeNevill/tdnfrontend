@@ -27,10 +27,10 @@
 
 /* Infrastructure Intelligence Labs — canvas grid + ambient wash */
 .labs-root {
-  @apply text-labs-text bg-labs-bg w-full relative overflow-hidden;
+  @apply text-labs-text bg-labs-bg w-full relative overflow-hidden text-base leading-relaxed;
 }
 .labs-root--fill {
-  @apply min-h-[calc(100vh-3.5rem)];
+  @apply flex-1 min-h-0;
 }
 .labs-root::before {
   content: "";

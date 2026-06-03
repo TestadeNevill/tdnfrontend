@@ -12,7 +12,15 @@ npm run dev
 - Framework preset: **Vite**
 - Build command: `npm run build`
 - Output: `dist`
-- (Optional) Env var: `VITE_FORMSPREE_ID=<your_form_id>`
+- Env vars (see `.env.example`):
+  - `VITE_FORMSPREE_ID` — Formspree form id for `/contact` (must use `VITE_` prefix; redeploy after adding)
+  - `OPENAI_API_KEY` — optional, reserved for future Labs AI demos (server-side only)
+
+### Labs API routes (Vercel serverless)
+- `POST /api/labs/parks/nearby` — Overpass-backed park lookup `{ lat, lng }` (no API key required)
+- `GET /api/labs/health` — reports which optional integrations are configured
+
+Local dev: `npm run dev` serves `/api/labs/*` via Vite middleware using the same handlers as production.
 
 ## Blog content
 - Edit `src/data/blogPosts.js` to control the list.

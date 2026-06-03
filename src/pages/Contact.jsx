@@ -1,20 +1,43 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useMemo } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { CONTACT_SUBJECTS, resolveContactSubject } from "../labs/contactSubjects";
 
 
 export default function Contact() {
   const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID?.trim();
+  const [searchParams] = useSearchParams();
 
-  const [values, setValues] = useState({
+  const [values, setValues] = useState(() => ({
     name: "",
     email: "",
-    subject: "",
+    subject: resolveContactSubject(
+      searchParams.get("subject"),
+      searchParams.get("intent"),
+    ),
     message: "",
     company: "", // honeypot
-  });
+  }));
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle"); // 'idle' | 'sending' | 'ok' | 'fail'
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const resolved = resolveContactSubject(
+      searchParams.get("subject"),
+      searchParams.get("intent"),
+    );
+    setValues((v) => (v.subject === resolved ? v : { ...v, subject: resolved }));
+  }, [searchParams]);
+
+  const subjectGroups = useMemo(() => {
+    const groups = new Map();
+    for (const option of CONTACT_SUBJECTS) {
+      if (!groups.has(option.group)) groups.set(option.group, []);
+      groups.get(option.group).push(option);
+    }
+    return groups;
+  }, []);
+
   function onChange(e) {
     const { name, value } = e.target;
     setValues((v) => ({ ...v, [name]: value }));
@@ -118,15 +141,27 @@ export default function Contact() {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">
+          <label htmlFor="contact-subject" className="block text-sm font-medium text-gray-700">
             Subject (optional)
           </label>
-          <input
+          <select
+            id="contact-subject"
             name="subject"
             value={values.subject}
             onChange={onChange}
-            className="w-full rounded-md border border-gray-300 px-4 py-2"
-          />
+            className="w-full rounded-md border border-gray-300 px-4 py-2 bg-white"
+          >
+            <option value="">Select a topic (optional)</option>
+            {[...subjectGroups.entries()].map(([group, options]) => (
+              <optgroup key={group} label={group}>
+                {options.map((option) => (
+                  <option key={option.value} value={option.value}>
+                    {option.value}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
         </div>
 
         <div>

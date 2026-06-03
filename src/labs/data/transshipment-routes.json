@@ -1,0 +1,37 @@
+[
+  {
+    "id": "r1",
+    "from": "hub-north",
+    "to": "hub-central",
+    "mode": "rail",
+    "path": "M 120 80 Q 180 100 250 160"
+  },
+  {
+    "id": "r2",
+    "from": "hub-central",
+    "to": "hub-south",
+    "mode": "road",
+    "path": "M 250 160 L 380 240"
+  },
+  {
+    "id": "r3",
+    "from": "hub-east",
+    "to": "hub-central",
+    "mode": "air",
+    "path": "M 420 100 Q 340 120 250 160"
+  },
+  {
+    "id": "r4",
+    "from": "hub-north",
+    "to": "hub-east",
+    "mode": "water",
+    "path": "M 120 80 Q 280 60 420 100"
+  },
+  {
+    "id": "r5",
+    "from": "hub-south",
+    "to": "hub-east",
+    "mode": "road",
+    "path": "M 380 240 Q 400 170 420 100"
+  }
+]

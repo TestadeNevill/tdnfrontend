@@ -58,7 +58,7 @@ export function LabsShell({
       className={[
         "labs-root",
         active ? "labs-root--active" : "",
-        fillViewport ? "labs-root--fill" : "",
+        fillViewport ? "labs-root--fill flex flex-col" : "",
       ]
         .filter(Boolean)
         .join(" ")}
@@ -95,7 +95,7 @@ export function LabsShell({
             {title}
           </h1>
           {subtitle != null && (
-            <p className="mt-2 max-w-3xl text-sm text-labs-textMuted md:text-base">
+            <p className="mt-2 max-w-3xl text-base text-labs-textMuted md:text-lg">
               {subtitle}
             </p>
           )}

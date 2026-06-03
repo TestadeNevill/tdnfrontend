@@ -1,0 +1,32 @@
+[
+  {
+    "id": "site-diligence",
+    "title": "Site diligence Q&A",
+    "prompt": "Compare two hydro sites by score decomposition and permit timeline.",
+    "label": "Hydro IQ"
+  },
+  {
+    "id": "gbp-reply",
+    "title": "Review reply draft",
+    "prompt": "Draft a professional reply to a 3-star Google review about wait times.",
+    "label": "GBP"
+  },
+  {
+    "id": "corridor-summary",
+    "title": "Corridor incident summary",
+    "prompt": "Summarize today's delay incidents on the I-95 spine and suggest mitigations.",
+    "label": "Transport"
+  },
+  {
+    "id": "grant-scout",
+    "title": "Grant eligibility scan",
+    "prompt": "Which DOE or REAP programs might apply to a 5 MW run-of-river project?",
+    "label": "Finance"
+  },
+  {
+    "id": "permit-roadmap",
+    "title": "Permit roadmap explain",
+    "prompt": "Explain why AWIA §3004 is the lightest path for this closed-loop PSH site.",
+    "label": "Permitting"
+  }
+]

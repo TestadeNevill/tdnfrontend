@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Central Park",
+    "lat": 40.7829,
+    "lng": -73.9654,
+    "type": "Urban park"
+  },
+  {
+    "name": "Prospect Park",
+    "lat": 40.6602,
+    "lng": -73.969,
+    "type": "Urban park"
+  },
+  {
+    "name": "Fort Tryon Park",
+    "lat": 40.8617,
+    "lng": -73.9326,
+    "type": "Historic park"
+  },
+  {
+    "name": "Flushing Meadows",
+    "lat": 40.7464,
+    "lng": -73.8458,
+    "type": "Recreation area"
+  }
+]

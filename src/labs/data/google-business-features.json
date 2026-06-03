@@ -1,0 +1,18 @@
+{
+  "gbpFeatures": [
+    { "name": "Review replies", "status": "supported" },
+    { "name": "Local posts", "status": "supported" },
+    { "name": "Q&A management", "status": "supported" },
+    { "name": "Photo uploads", "status": "planned" },
+    { "name": "Insights dashboard", "status": "supported" }
+  ],
+  "socialIntegrations": [
+    "Meta Business Suite cross-posting",
+    "UTM tracking on outbound links"
+  ],
+  "aiUseCases": [
+    "Review triage and suggested replies",
+    "Local post drafts from bullet notes",
+    "Sentiment tagging for escalation"
+  ]
+}

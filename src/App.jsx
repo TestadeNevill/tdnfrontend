@@ -17,7 +17,10 @@ import IntelligentUrbanism from './pages/blog/IntelligentUrbanism.jsx'
 import VercelSPAView from './analytics/VercelSPAView.jsx'
 import RealEstateConsolidation from './pages/blog/RealEstateConsolidation.jsx'
 import Ideas from './pages/Ideas.jsx'
-import LabsHome from './labs/pages/LabsHome.jsx'
+import LabsHome from './labs/pages/LabsHome'
+import HydroIQOverview from './labs/pages/HydroIQOverview'
+import InsightWorkbench from './labs/pages/InsightWorkbench'
+import { LabsChatWidget } from './labs/components/LabsChatWidget'
 
 export default function App() {
   return (
@@ -25,12 +28,15 @@ export default function App() {
       <Navbar />
        <main className="flex-1 flex flex-col">
         <VercelSPAView />
+        <div className="flex flex-1 flex-col">
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/ideas" element={<Ideas />} />
             <Route path="/labs" element={<LabsHome />} />
+            <Route path="/labs/hydroiq" element={<HydroIQOverview />} />
+            <Route path="/labs/demos/insight-workbench" element={<InsightWorkbench />} />
             {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/transshipment" element={<Transshipment />} />
@@ -44,7 +50,9 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </ErrorBoundary>
+        </div>
       </main>
+      <LabsChatWidget />
       <Footer />
     </div>
   );

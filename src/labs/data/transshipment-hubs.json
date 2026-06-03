@@ -1,0 +1,6 @@
+[
+  { "id": "hub-north", "name": "North Terminal", "x": 120, "y": 80, "pressure": 0.45 },
+  { "id": "hub-central", "name": "Central Cross-Dock", "x": 250, "y": 160, "pressure": 0.72 },
+  { "id": "hub-south", "name": "South Intermodal", "x": 380, "y": 240, "pressure": 0.58 },
+  { "id": "hub-east", "name": "East Air Cargo", "x": 420, "y": 100, "pressure": 0.33 }
+]

@@ -17,6 +17,25 @@ export default {
         heading: ['"Playfair Display"', 'Georgia', 'serif'],
         body: ['"Source Sans 3"', 'system-ui', 'sans-serif'],
       },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+        hydroDraw: {
+          from: { strokeDashoffset: "400" },
+          to: { strokeDashoffset: "0" },
+        },
+        hydroFlow: {
+          "0%, 100%": { opacity: "0.4" },
+          "50%": { opacity: "1" },
+        },
+      },
+      animation: {
+        fadeIn: "fadeIn 0.35s ease-out",
+        hydroDraw: "hydroDraw 2.5s ease-out forwards",
+        hydroFlow: "hydroFlow 2s ease-in-out infinite",
+      },
       colors: {
         labs: {
           bg: "#e4eaf1",
@@ -27,7 +46,7 @@ export default {
           accentMuted: "#10b981",
           glow: "#047857",
           text: "#0f172a",
-          textMuted: "#475569",
+          textMuted: "#334155",
           danger: "#dc2626",
           warning: "#d97706",
           ok: "#16a34a",
