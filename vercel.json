@@ -3,6 +3,9 @@
     "api/labs/parks/nearby.js": {
       "maxDuration": 15
     },
+    "api/labs/parks/photo.js": {
+      "maxDuration": 15
+    },
     "api/labs/ai/complete.js": {
       "maxDuration": 30
     }

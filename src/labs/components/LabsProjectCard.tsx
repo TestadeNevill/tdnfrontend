@@ -13,7 +13,7 @@ export function LabsProjectCard({ project }: LabsProjectCardProps) {
         <h3 className="text-base font-semibold text-labs-text">{project.title}</h3>
         <LabsStatusBadge variant={project.status} label={project.statusLabel} />
       </div>
-      <p className="mt-2 flex-1 text-sm text-labs-textMuted leading-relaxed">
+      <p className="mt-2 flex-1 text-base text-labs-textMuted leading-relaxed">
         {project.description}
       </p>
       <div className="mt-3 flex flex-wrap gap-1.5">

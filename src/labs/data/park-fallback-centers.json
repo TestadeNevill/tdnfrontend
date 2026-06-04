@@ -1,26 +1,98 @@
 [
   {
+    "id": "fallback-central-park",
     "name": "Central Park",
     "lat": 40.7829,
     "lng": -73.9654,
-    "type": "Urban park"
+    "type": "Urban park",
+    "distanceKm": 3.2,
+    "address": "Central Park, New York, NY 10024, USA",
+    "phone": "+1 212-310-6600",
+    "website": "https://www.centralparknyc.org/",
+    "hours": [
+      "Monday: 6:00 AM – 1:00 AM",
+      "Tuesday: 6:00 AM – 1:00 AM",
+      "Wednesday: 6:00 AM – 1:00 AM",
+      "Thursday: 6:00 AM – 1:00 AM",
+      "Friday: 6:00 AM – 1:00 AM",
+      "Saturday: 6:00 AM – 1:00 AM",
+      "Sunday: 6:00 AM – 1:00 AM"
+    ],
+    "permittedUses": ["Dogs allowed (on leash)", "Good for children", "Walking & cycling paths"],
+    "prohibitedUses": ["Motor vehicles (except on drives)", "Glass containers"],
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=40.7829,-73.9654&travelmode=walking",
+    "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Central%20Park%2C%20New%20York%2C%20NY"
   },
   {
+    "id": "fallback-prospect-park",
     "name": "Prospect Park",
     "lat": 40.6602,
     "lng": -73.969,
-    "type": "Urban park"
+    "type": "Urban park",
+    "distanceKm": 5.1,
+    "address": "Prospect Park, Brooklyn, NY 11215, USA",
+    "phone": "+1 718-965-8951",
+    "website": "https://www.prospectpark.org/",
+    "hours": [
+      "Monday: 5:00 AM – 1:00 AM",
+      "Tuesday: 5:00 AM – 1:00 AM",
+      "Wednesday: 5:00 AM – 1:00 AM",
+      "Thursday: 5:00 AM – 1:00 AM",
+      "Friday: 5:00 AM – 1:00 AM",
+      "Saturday: 5:00 AM – 1:00 AM",
+      "Sunday: 5:00 AM – 1:00 AM"
+    ],
+    "permittedUses": ["Dogs allowed (on leash)", "Picnicking", "Sports fields"],
+    "prohibitedUses": ["Off-leash dogs (except in designated areas)"],
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=40.6602,-73.969&travelmode=walking",
+    "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Prospect%20Park%2C%20Brooklyn%2C%20NY"
   },
   {
+    "id": "fallback-fort-tryon",
     "name": "Fort Tryon Park",
     "lat": 40.8617,
     "lng": -73.9326,
-    "type": "Historic park"
+    "type": "Historic park",
+    "distanceKm": 8.4,
+    "address": "Fort Tryon Park, New York, NY 10040, USA",
+    "phone": "+1 212-795-1388",
+    "website": "https://www.nycgovparks.org/parks/fort-tryon-park",
+    "hours": [
+      "Monday: 6:00 AM – 1:00 AM",
+      "Tuesday: 6:00 AM – 1:00 AM",
+      "Wednesday: 6:00 AM – 1:00 AM",
+      "Thursday: 6:00 AM – 1:00 AM",
+      "Friday: 6:00 AM – 1:00 AM",
+      "Saturday: 6:00 AM – 1:00 AM",
+      "Sunday: 6:00 AM – 1:00 AM"
+    ],
+    "permittedUses": ["Walking trails", "Heather Garden", "Good for children"],
+    "prohibitedUses": ["Bicycles on pedestrian paths"],
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=40.8617,-73.9326&travelmode=walking",
+    "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Fort%20Tryon%20Park%2C%20New%20York%2C%20NY"
   },
   {
+    "id": "fallback-flushing-meadows",
     "name": "Flushing Meadows",
     "lat": 40.7464,
     "lng": -73.8458,
-    "type": "Recreation area"
+    "type": "Recreation area",
+    "distanceKm": 9.7,
+    "address": "Flushing Meadows Corona Park, Queens, NY 11368, USA",
+    "phone": "+1 718-760-6565",
+    "website": "https://www.nycgovparks.org/parks/flushing-meadows-corona-park",
+    "hours": [
+      "Monday: 6:00 AM – 9:00 PM",
+      "Tuesday: 6:00 AM – 9:00 PM",
+      "Wednesday: 6:00 AM – 9:00 PM",
+      "Thursday: 6:00 AM – 9:00 PM",
+      "Friday: 6:00 AM – 9:00 PM",
+      "Saturday: 6:00 AM – 9:00 PM",
+      "Sunday: 6:00 AM – 9:00 PM"
+    ],
+    "permittedUses": ["Sports & recreation", "Picnicking", "Meadow Lake activities"],
+    "prohibitedUses": ["Open fires", "Glass containers"],
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=40.7464,-73.8458&travelmode=walking",
+    "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Flushing%20Meadows%20Corona%20Park%2C%20Queens%2C%20NY"
   }
 ]

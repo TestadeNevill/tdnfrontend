@@ -12,7 +12,7 @@ export function LabsServiceCarousel({ activeId }: LabsServiceCarouselProps) {
   const Panel = service.panel;
 
   return (
-    <LabsPanel key={activeId} className="animate-[fadeIn_0.35s_ease-out]">
+    <LabsPanel key={activeId} className="w-full min-w-0 animate-[fadeIn_0.35s_ease-out]">
       <Panel />
     </LabsPanel>
   );

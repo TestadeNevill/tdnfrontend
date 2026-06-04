@@ -61,7 +61,7 @@ export default function InsightWorkbench() {
               Mock mode — add OPENAI_API_KEY in Vercel to enable live synthesis
             </p>
           )}
-          <pre className="whitespace-pre-wrap text-sm leading-relaxed text-labs-text">{result.text}</pre>
+          <pre className="whitespace-pre-wrap text-base leading-relaxed text-labs-text">{result.text}</pre>
         </LabsPanel>
       )}
     </LabsShell>

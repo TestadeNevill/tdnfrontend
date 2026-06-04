@@ -69,8 +69,15 @@ export async function completeAiTask(task, userContent) {
   });
 
   if (response.status === 429) {
-    const error = new Error("OpenAI rate limit");
+    const detail = await response.text().catch(() => "");
+    const isQuota = detail.includes("insufficient_quota");
+    const error = new Error(
+      isQuota
+        ? "OpenAI quota exceeded — add billing or credits at platform.openai.com"
+        : "OpenAI rate limit — wait a moment and try again",
+    );
     error.status = 429;
+    error.code = isQuota ? "insufficient_quota" : "rate_limit";
     throw error;
   }
 

@@ -57,22 +57,11 @@ export default function LabsHome() {
       breadcrumb={[{ label: "Labs" }]}
     >
       <LabsSection
-        id="projects"
-        title="Projects"
-        subtitle="Flagship Hydro IQ workflow — GIS scoring, financial screening, and deterministic permitting matrix."
-      >
-        <LabsHydroProjectPanel />
-        <ContactCtas subject={hydroSubject} />
-      </LabsSection>
-
-      <hr className="my-10 border-labs-border" aria-hidden="true" />
-
-      <LabsSection
         id="services"
         title="Services"
-        subtitle="Select a capability to preview workflows for local presence, geospatial lookup, AI assistance, and logistics simulation."
+        subtitle="Digital solutions, geospatial lookup, AI assistance, and logistics simulation — select a capability to preview."
       >
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(200px,25%)_1fr]">
+        <div className="space-y-6">
           <LabsServiceNav
             services={LABS_SERVICES}
             activeId={activeServiceId}
@@ -81,6 +70,17 @@ export default function LabsHome() {
           <LabsServiceCarousel activeId={activeServiceId} />
         </div>
         <ContactCtas subject={activeService.title} />
+      </LabsSection>
+
+      <hr className="my-10 border-labs-border" aria-hidden="true" />
+
+      <LabsSection
+        id="projects"
+        title="Projects"
+        subtitle="Flagship Hydro IQ workflow — GIS scoring, financial screening, and deterministic permitting matrix."
+      >
+        <LabsHydroProjectPanel />
+        <ContactCtas subject={hydroSubject} />
       </LabsSection>
     </LabsShell>
   );

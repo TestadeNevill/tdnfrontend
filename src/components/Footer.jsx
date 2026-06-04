@@ -11,7 +11,7 @@ export default function Footer() {
         isLabs ? "mt-0 border-labs-border bg-labs-bg" : "mt-12",
       ].join(" ")}
     >
-      <div className="max-w-5xl mx-auto px-4 md:px-10 py-8">
+      <div className="site-container py-8">
         <p className="text-sm text-gray-500 text-center">
           © {new Date().getFullYear()} Testa de Nevill • Vite + React • Deployed on Vercel
         </p>

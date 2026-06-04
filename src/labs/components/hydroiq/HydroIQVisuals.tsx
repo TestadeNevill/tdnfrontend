@@ -175,46 +175,73 @@ export function PermitTimelineChart() {
   );
 }
 
-/** Water → generation → grid flow animation */
+/** Water → generation → grid → firm power flow animation */
 export function EnergyFlowDiagram() {
   return (
-    <svg viewBox="0 0 480 120" className="w-full" aria-label="Water to clean energy flow">
+    <svg
+      viewBox="0 0 560 120"
+      overflow="visible"
+      className="min-w-[480px] w-full"
+      aria-label="Water to clean energy flow"
+    >
       <defs>
         <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0%" stopColor="#0891b2" />
           <stop offset="100%" stopColor="#059669" />
         </linearGradient>
+        <marker
+          id="hydroArrow"
+          markerWidth="8"
+          markerHeight="8"
+          refX="6"
+          refY="4"
+          orient="auto"
+        >
+          <path d="M0,0 L8,4 L0,8 Z" fill="#94a3b8" />
+        </marker>
       </defs>
       {/* Water source */}
       <rect x="10" y="30" width="90" height="60" rx="8" fill="#ecfeff" stroke="#0891b2" strokeWidth="2" />
       <text x="55" y="55" textAnchor="middle" className="fill-cyan-800 text-[11px] font-semibold">Water</text>
       <text x="55" y="72" textAnchor="middle" className="fill-cyan-700 text-[9px]">Asset</text>
       {/* Arrow 1 */}
-      <line x1="100" y1="60" x2="140" y2="60" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#arrow)" />
+      <line x1="100" y1="60" x2="140" y2="60" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#hydroArrow)" />
       <circle r="4" fill="#059669" className="animate-[hydroFlow_2s_ease-in-out_infinite]">
         <animateMotion dur="2s" repeatCount="indefinite" path="M105,60 L135,60" />
       </circle>
       {/* Turbine */}
-      <rect x="150" y="25" width="100" height="70" rx="8" fill="#ecfdf5" stroke="#059669" strokeWidth="2" />
-      <text x="200" y="52" textAnchor="middle" className="fill-emerald-800 text-[11px] font-semibold">Hydro</text>
-      <text x="200" y="68" textAnchor="middle" className="fill-emerald-700 text-[9px]">Generation</text>
-      <circle cx="200" cy="82" r="8" fill="none" stroke="#059669" strokeWidth="2" className="origin-center animate-spin" style={{ animationDuration: "4s" }} />
+      <rect x="140" y="25" width="90" height="70" rx="8" fill="#ecfdf5" stroke="#059669" strokeWidth="2" />
+      <text x="185" y="52" textAnchor="middle" className="fill-emerald-800 text-[11px] font-semibold">Hydro</text>
+      <text x="185" y="68" textAnchor="middle" className="fill-emerald-700 text-[9px]">Generation</text>
+      <circle cx="185" cy="82" r="8" fill="none" stroke="#059669" strokeWidth="2">
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          from="0 185 82"
+          to="360 185 82"
+          dur="4s"
+          repeatCount="indefinite"
+        />
+      </circle>
       {/* Arrow 2 */}
+      <line x1="230" y1="60" x2="270" y2="60" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#hydroArrow)" />
       <circle r="4" fill="#059669" className="animate-[hydroFlow_2s_ease-in-out_infinite]">
-        <animateMotion dur="2s" repeatCount="indefinite" begin="0.5s" path="M255,60 L295,60" />
+        <animateMotion dur="2s" repeatCount="indefinite" begin="0.5s" path="M235,60 L265,60" />
       </circle>
-      <line x1="250" y1="60" x2="300" y2="60" stroke="#94a3b8" strokeWidth="2" />
       {/* Grid */}
-      <rect x="310" y="30" width="90" height="60" rx="8" fill="#fef3c7" stroke="#d97706" strokeWidth="2" />
-      <text x="355" y="55" textAnchor="middle" className="fill-amber-900 text-[11px] font-semibold">Grid</text>
-      <text x="355" y="72" textAnchor="middle" className="fill-amber-800 text-[9px]">Markets</text>
+      <rect x="270" y="30" width="90" height="60" rx="8" fill="#fef3c7" stroke="#d97706" strokeWidth="2" />
+      <text x="315" y="55" textAnchor="middle" className="fill-amber-900 text-[11px] font-semibold">Grid</text>
+      <text x="315" y="72" textAnchor="middle" className="fill-amber-800 text-[9px]">Markets</text>
       {/* Arrow 3 */}
+      <line x1="360" y1="60" x2="400" y2="60" stroke="#94a3b8" strokeWidth="2" markerEnd="url(#hydroArrow)" />
       <circle r="4" fill="#d97706" className="animate-[hydroFlow_2s_ease-in-out_infinite]">
-        <animateMotion dur="2s" repeatCount="indefinite" begin="1s" path="M405,60 L445,60" />
+        <animateMotion dur="2s" repeatCount="indefinite" begin="1s" path="M365,60 L395,60" />
       </circle>
-      <line x1="400" y1="60" x2="450" y2="60" stroke="#94a3b8" strokeWidth="2" />
-      {/* Value */}
-      <rect x="460" y="35" width="10" height="50" rx="2" fill="#059669" opacity="0.3" className="animate-pulse" />
+      {/* Firm power */}
+      <rect x="400" y="30" width="90" height="60" rx="8" fill="#ecfdf5" stroke="#059669" strokeWidth="2" />
+      <text x="445" y="52" textAnchor="middle" className="fill-emerald-800 text-[11px] font-semibold">Firm</text>
+      <text x="445" y="68" textAnchor="middle" className="fill-emerald-700 text-[9px]">Clean power</text>
+      <circle cx="445" cy="82" r="5" fill="#059669" className="animate-pulse" />
     </svg>
   );
 }
@@ -280,7 +307,7 @@ export function ProcessComparison() {
       <div className="rounded-xl border-2 border-dashed border-red-200 bg-red-50/50 p-4">
         <p className="font-labsMono text-xs font-semibold uppercase tracking-wider text-red-700">Before</p>
         <p className="mt-2 text-sm font-semibold text-labs-text">Fragmented diligence</p>
-        <ul className="mt-3 space-y-2 text-sm text-slate-700">
+        <ul className="mt-3 space-y-2 text-base text-slate-700">
           <li className="flex gap-2"><span className="text-red-500">✕</span> GIS in one tool, finance in spreadsheets</li>
           <li className="flex gap-2"><span className="text-red-500">✕</span> Permitting guessed or outsourced late</li>
           <li className="flex gap-2"><span className="text-red-500">✕</span> Black-box scores, no audit trail</li>
@@ -290,7 +317,7 @@ export function ProcessComparison() {
       <div className="rounded-xl border-2 border-labs-accent/40 bg-emerald-50/50 p-4">
         <p className="font-labsMono text-xs font-semibold uppercase tracking-wider text-labs-accent">With Hydro IQ</p>
         <p className="mt-2 text-sm font-semibold text-labs-text">One deterministic workflow</p>
-        <ul className="mt-3 space-y-2 text-sm text-slate-700">
+        <ul className="mt-3 space-y-2 text-base text-slate-700">
           <li className="flex gap-2"><span className="text-labs-ok">✓</span> Atlas skeleton + live API enrichment</li>
           <li className="flex gap-2"><span className="text-labs-ok">✓</span> Rules engine routes — LLM never decides law</li>
           <li className="flex gap-2"><span className="text-labs-ok">✓</span> Full score decomposition + pro-forma ranges</li>

@@ -1,12 +1,19 @@
+import {
+  isGooglePlacesConfigured,
+  searchNearbyParks as googleSearchNearbyParks,
+} from "./googlePlaces.js";
+
 const OVERPASS_ENDPOINTS = [
   "https://overpass.kumi.systems/api/interpreter",
   "https://overpass.openstreetmap.ru/api/interpreter",
   "https://overpass-api.de/api/interpreter",
 ];
 
-const DEFAULT_RADIUS_M = 2000;
-const MAX_RADIUS_M = 5000;
-const MAX_RESULTS = 20;
+export const DEFAULT_RADIUS_M = 2000;
+export const MAX_RADIUS_M = 5000;
+export const MAX_RESULTS = 10;
+
+const REQUEST_TIMEOUT_MS = 12_000;
 
 function haversineKm(lat1, lng1, lat2, lng2) {
   const toRad = (deg) => (deg * Math.PI) / 180;
@@ -17,8 +24,6 @@ function haversineKm(lat1, lng1, lat2, lng2) {
     Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
   return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
-
-const REQUEST_TIMEOUT_MS = 12_000;
 
 function buildOverpassQuery(lat, lng, radiusM) {
   return `
@@ -65,7 +70,7 @@ function parseOverpassElements(elements, originLat, originLng) {
   });
 }
 
-async function queryOverpass(lat, lng, radiusM) {
+async function fetchOverpassParks(lat, lng, radiusM) {
   const query = buildOverpassQuery(lat, lng, radiusM);
 
   const attempts = OVERPASS_ENDPOINTS.map(async (endpoint) => {
@@ -123,9 +128,18 @@ export function normalizeParksRequest(body) {
 }
 
 export async function fetchNearbyParks(lat, lng, radiusM) {
-  const parks = await queryOverpass(lat, lng, radiusM);
+  if (!isGooglePlacesConfigured()) {
+    const error = new Error("GOOGLE_PLACES_API_KEY is not configured");
+    error.status = 502;
+    error.code = "missing_api_key";
+    throw error;
+  }
+
+  const parks = await googleSearchNearbyParks(lat, lng, radiusM);
   return {
     parks,
     source: parks.length > 0 ? "api" : "fallback",
   };
 }
+
+export { fetchOverpassParks };

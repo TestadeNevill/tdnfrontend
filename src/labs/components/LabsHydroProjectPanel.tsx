@@ -113,10 +113,10 @@ function HydroWorkflowDiagram() {
                 </span>
                 <h5 className="text-sm font-semibold text-labs-text">{item.title}</h5>
               </div>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700">{item.summary}</p>
+              <p className="mt-2 text-base leading-relaxed text-slate-700">{item.summary}</p>
               <ul className="mt-2 space-y-1.5 border-t border-black/5 pt-2">
                 {item.details.map((detail) => (
-                  <li key={detail} className="flex gap-1.5 text-sm leading-relaxed text-slate-700">
+                  <li key={detail} className="flex gap-1.5 text-base leading-relaxed text-slate-700">
                     <span className="shrink-0 font-semibold text-labs-text">›</span>
                     <span>{detail}</span>
                   </li>
@@ -157,7 +157,7 @@ export function LabsHydroProjectPanel() {
               diligence run-of-river and PSH sites with transparent scores and a permitting
               roadmap.
             </p>
-            <p className="text-sm text-labs-textMuted">
+            <p className="text-base text-labs-textMuted">
               Screening-grade infrastructure intelligence — GIS, finance, and FERC routing in
               one deterministic workflow.
             </p>
@@ -181,8 +181,8 @@ export function LabsHydroProjectPanel() {
             className="rounded-lg border border-labs-border bg-labs-panel2 p-3"
           >
             <h4 className="text-sm font-semibold text-labs-text">{feature.title}</h4>
-            <p className="mt-1 text-sm text-labs-textMuted leading-relaxed">{feature.summary}</p>
-            <ul className="mt-2 space-y-1.5 text-sm text-labs-textMuted">
+            <p className="mt-1 text-base text-labs-textMuted leading-relaxed">{feature.summary}</p>
+            <ul className="mt-2 space-y-1.5 text-base text-labs-textMuted">
               {feature.bullets.map((bullet) => (
                 <li key={bullet} className="flex gap-1.5">
                   <span className="text-labs-accent">•</span>
@@ -278,7 +278,7 @@ export function LabsHydroProjectPanel() {
       </div>
 
       <footer className="space-y-3 border-t border-labs-border pt-4">
-        <p className="text-sm font-medium text-labs-warning">
+        <p className="text-base font-medium text-labs-warning">
           Screening-grade only — not bankable feasibility, legal, or financial advice.
         </p>
         <p className="text-xs text-labs-textMuted">

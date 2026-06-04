@@ -71,7 +71,7 @@ export function LabsShell({
         pointerRef={pointerRef}
         requestFrameRef={requestFrameRef}
       />
-      <div className="relative z-10 mx-auto max-w-5xl px-4 py-6 md:px-10 md:py-8">
+      <div className="labs-container relative z-10 py-6 md:py-8">
         {breadcrumb != null && breadcrumb.length > 0 && (
           <nav className="mb-4 text-xs font-labsMono text-labs-textMuted" aria-label="Breadcrumb">
             <ol className="flex flex-wrap items-center gap-1">
@@ -95,7 +95,7 @@ export function LabsShell({
             {title}
           </h1>
           {subtitle != null && (
-            <p className="mt-2 max-w-3xl text-base text-labs-textMuted md:text-lg">
+            <p className="mt-2 max-w-4xl text-lg text-labs-textMuted md:text-xl">
               {subtitle}
             </p>
           )}

@@ -8,7 +8,10 @@
   }
 }
 
-.container-page { @apply min-h-screen px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed; }
+.site-container {
+  @apply mx-auto w-full max-w-7xl px-4 md:px-10;
+}
+.container-page { @apply site-container min-h-screen pt-4 pb-20 text-gray-800 text-lg leading-relaxed; }
 .card { @apply rounded-xl border border-gray-200 bg-white shadow-md; }
 .link { @apply text-primary-700 hover:underline; }
 
@@ -26,8 +29,11 @@
 }
 
 /* Infrastructure Intelligence Labs — canvas grid + ambient wash */
+.labs-container {
+  @apply site-container;
+}
 .labs-root {
-  @apply text-labs-text bg-labs-bg w-full relative overflow-hidden text-base leading-relaxed;
+  @apply text-labs-text bg-labs-bg w-full relative overflow-hidden text-lg leading-relaxed;
 }
 .labs-root--fill {
   @apply flex-1 min-h-0;

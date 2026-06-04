@@ -1,0 +1,190 @@
+{
+  "intro": {
+    "headline": "Digital Solutions",
+    "subhead": "Software, websites, Google Business, and automation for local businesses — scoped in clear tiers with transparent price ranges."
+  },
+  "gbpBenefits": [
+    "Show up in Google Maps and local search when customers are ready to hire",
+    "Collect and respond to reviews where prospects compare you to competitors",
+    "Publish updates, offers, and photos that stay synced with your social channels",
+    "See how customers find and interact with your listing via Insights",
+    "Build trust with verified hours, service area, and consistent branding"
+  ],
+  "complexityLadder": [
+    "W1 Basic — new or refreshed site",
+    "W2 Additions — pages, widgets, PDFs, estimators",
+    "Advanced — stores, ordering, maps & GIS"
+  ],
+  "categories": [
+    {
+      "id": "foundation",
+      "label": "Foundation",
+      "subtitle": "Local presence setup before you invest in a full web build.",
+      "services": [
+        {
+          "code": "F1",
+          "title": "Google Business + social integration",
+          "price": "$75–$400",
+          "priceNote": "one-time",
+          "deliverables": [
+            "Connect Instagram or Meta accounts to Google Business profiles",
+            "Configure cross-posting so social content publishes to GMB Updates",
+            "Audit profiles: hours, service area, photos, categories — fix gaps",
+            "Set up scheduling for posts across connected accounts"
+          ],
+          "problem": "Customers search on Maps and Google, but your profile is incomplete and social posts never reach your Business listing.",
+          "solution": "One connected local presence: accurate GMB profiles with social content flowing to Updates automatically.",
+          "approach": "Audit both profiles → connect accounts → configure cross-post rules → hand off a short maintenance checklist."
+        }
+      ]
+    },
+    {
+      "id": "websites",
+      "label": "Websites",
+      "subtitle": "Basic → Additions — combine new sites and edits into two complexity tiers.",
+      "services": [
+        {
+          "code": "W1",
+          "tier": "Basic",
+          "title": "New site or edit / refresh",
+          "price": "$200–$500",
+          "priceNote": "one-time",
+          "deliverables": [
+            "New starter site or refresh of an existing site",
+            "Core pages (home, services, contact), responsive layout",
+            "Header, footer, colors, and typography aligned to your brand",
+            "Mobile-responsive check and before/after walkthrough on delivery"
+          ],
+          "problem": "You need to be online fast with a credible site, or your current site looks dated and doesn't work on phones.",
+          "solution": "A clean, mobile-ready web presence — launched new or refreshed — without enterprise overhead.",
+          "approach": "Confirm scope (new vs. edit) → apply brand template → ship core pages → review together on delivery."
+        },
+        {
+          "code": "W2",
+          "tier": "Additions",
+          "title": "Website expansions & interactive tools",
+          "price": "$250–$1,500",
+          "priceNote": "one-time — scales with scope",
+          "deliverables": [
+            "Additional pages and service or location sections",
+            "Embedded widgets (forms, calculators, third-party APIs)",
+            "Signable estimate or proposal PDF workflow",
+            "Address-based cost or scope estimator with lead capture",
+            "Mobile and SEO check on all shipped changes"
+          ],
+          "problem": "A basic site isn't enough — you need more pages, lead capture, or tools that quote work without phone tag.",
+          "solution": "Targeted additions: content, widgets, e-sign PDFs, and estimators that turn visitors into qualified leads.",
+          "approach": "Prioritize features → build in phases → embed and test on your live platform → document how your team uses each tool."
+        }
+      ]
+    },
+    {
+      "id": "growth",
+      "label": "Growth & social",
+      "subtitle": "Ongoing content that feeds both Instagram and Google Business.",
+      "services": [
+        {
+          "code": "G1",
+          "title": "Social content retainer",
+          "price": "$200–$350",
+          "priceNote": "/month",
+          "deliverables": [
+            "8–12 posts per month (seasonal, project highlights, reviews, tips)",
+            "All posts cross-published to Google Business Updates",
+            "Monthly content calendar sent for approval before the month starts",
+            "Rapid-turn posts for time-sensitive events when you provide photos"
+          ],
+          "problem": "Posting consistently takes time, and when you stop, Maps and social both go quiet.",
+          "solution": "A steady calendar of on-brand posts with GMB cross-publish — you supply photos, we handle copy and scheduling.",
+          "approach": "Align on voice and themes → calendar for approval → schedule and cross-post → monthly metrics check-in."
+        }
+      ]
+    },
+    {
+      "id": "commerce",
+      "label": "Commerce",
+      "subtitle": "Advanced tier — after your core site is live.",
+      "services": [
+        {
+          "code": "C1",
+          "tier": "Advanced",
+          "title": "Online store",
+          "price": "$1,200–$3,500",
+          "priceNote": "one-time",
+          "deliverables": [
+            "Product catalog with categories and variants",
+            "Cart, checkout, and basic order notifications",
+            "Mobile-friendly shopping experience",
+            "Foundational SEO for product and collection pages"
+          ],
+          "problem": "Customers want to buy online but you're limited to phone orders or a generic marketplace.",
+          "solution": "A branded store on your own site with checkout you control.",
+          "approach": "Catalog structure → platform setup → payments and shipping rules → test orders → launch checklist."
+        },
+        {
+          "code": "C2",
+          "tier": "Advanced",
+          "title": "Restaurant ordering",
+          "price": "$1,500–$4,000",
+          "priceNote": "one-time",
+          "deliverables": [
+            "Digital menu with categories, modifiers, and specials",
+            "Pickup and/or delivery ordering flow",
+            "Order notifications to kitchen or counter staff",
+            "Hours, closures, and item availability controls"
+          ],
+          "problem": "Third-party apps take a large cut and you don't own the customer relationship.",
+          "solution": "Direct ordering on your site — menu, flow, and branding under your control.",
+          "approach": "Menu modeling → order flow UX → payment and notification hooks → staff training on order handling."
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "label": "Automation & GIS",
+      "subtitle": "AI assistance and map-based tools for service businesses.",
+      "services": [
+        {
+          "code": "A1",
+          "title": "AI chat & workflow automation",
+          "price": "$400–$2,000",
+          "priceNote": "setup",
+          "deliverables": [
+            "Website chat widget with guardrails and escalation paths",
+            "Lead routing (email, CRM hook, or shared inbox)",
+            "Draft helpers for reviews, FAQs, and local posts",
+            "Optional maintenance for prompts and knowledge updates"
+          ],
+          "problem": "After-hours questions go unanswered and your team repeats the same replies on email and chat.",
+          "solution": "AI-assisted chat and drafts that capture leads and speed up routine responses — with humans in the loop.",
+          "approach": "Define allowed topics → wire widget and routing → test with real FAQs → tune prompts from live transcripts."
+        },
+        {
+          "code": "M1",
+          "tier": "Advanced",
+          "title": "GIS & map integrations",
+          "price": "$600–$2,200",
+          "priceNote": "one-time",
+          "deliverables": [
+            "Service area maps and location finders",
+            "Embedded Google Maps or custom map layers",
+            "Field or asset overlays for operations teams",
+            "Locator widgets tied to address search or territories"
+          ],
+          "problem": "Customers don't know if you serve their area, and internal teams lack a single map view of coverage or sites.",
+          "solution": "Clear, interactive maps on the site and optional GIS layers for planning and customer self-service.",
+          "approach": "Define geographies or datasets → build embed or layer → validate on mobile → document update process."
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "lines": [
+      "Typical starter bundle (F1 + W1): about $450–$900 one-time",
+      "Add W2 for interactive tools or G1 for ongoing social — priced separately",
+      "Commerce (C1/C2) and maps (M1) scoped after your core site is stable"
+    ],
+    "depositNote": "Typical deposit $200–$500 to begin foundation or W1 work; remainder on agreed milestones."
+  },
+  "pricingDisclaimer": "Ranges are indicative. Final quotes depend on your platform (WordPress, Squarespace, custom, etc.), content readiness, and third-party integrations."
+}

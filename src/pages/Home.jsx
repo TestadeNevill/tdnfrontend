@@ -92,7 +92,7 @@ export default function Home() {
       </div>
 
       {/* Hero text — vertically centered */}
-      <div className="relative max-w-5xl mx-auto px-4 md:px-10 text-center md:text-left">
+      <div className="site-container relative text-center md:text-left">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 drop-shadow">
           Designing sustainable, intelligent cities.
         </h1>

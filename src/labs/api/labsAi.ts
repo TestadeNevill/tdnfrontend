@@ -22,7 +22,7 @@ export async function labsAiComplete(
     throw new Error("Rate limit reached — try again in a minute.");
   }
 
-  const data = (await res.json()) as LabsAiResult & { error?: string };
+  const data = (await res.json()) as LabsAiResult & { error?: string; code?: string };
   if (!res.ok) {
     throw new Error(data.error ?? "AI request failed");
   }

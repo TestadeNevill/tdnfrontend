@@ -6,7 +6,7 @@ import StationAreaMap from "../../components/StationAreaMap.jsx";
 
 export default function TransitHubs() {
   return (
-    <section className="min-h-screen bg-white px-4 md:px-10 pt-4 pb-20 max-w-5xl mx-auto text-gray-800 text-lg leading-relaxed space-y-12">
+    <section className="site-container min-h-screen bg-white pt-4 pb-20 text-gray-800 text-lg leading-relaxed space-y-12">
       {/* Header */}
       <header className="space-y-2">
         <h1 className="text-4xl font-bold text-green-800">

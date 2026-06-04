@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section className="min-h-screen bg-white max-w-5xl mx-auto px-4 sm:px-6 md:px-10 pt-6 pb-20 text-gray-800 text-lg leading-relaxed space-y-16">
+    <section className="site-container min-h-screen bg-white pt-6 pb-20 text-gray-800 text-lg leading-relaxed space-y-16">
       {/* Heading */}
       <header className="text-center">
         <h2 className="text-4xl font-bold text-primary-800">About Me</h2>

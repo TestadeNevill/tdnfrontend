@@ -20,11 +20,24 @@ export interface LabsProjectMeta {
 }
 
 export interface ParkDetail {
+  id?: string;
   name: string;
   lat: number;
   lng: number;
   distanceKm?: number;
   type?: string;
+  address?: string;
+  phone?: string;
+  website?: string;
+  hours?: string[];
+  photoRef?: string;
+  photoUrl?: string;
+  permittedUses?: string[];
+  prohibitedUses?: string[];
+  googleMapsUri?: string;
+  directionsUrl?: string;
+  mapsSearchUrl?: string;
+  summary?: string;
 }
 
 export interface ParksNearbyResponse {
@@ -55,4 +68,32 @@ export interface TransshipmentSimEvent {
   timestamp: number;
   message: string;
   level: "info" | "warn" | "ok";
+}
+
+export interface DigitalSolutionService {
+  code: string;
+  tier?: string;
+  title: string;
+  price: string;
+  priceNote?: string;
+  deliverables: string[];
+  problem: string;
+  solution: string;
+  approach: string;
+}
+
+export interface DigitalSolutionCategory {
+  id: string;
+  label: string;
+  subtitle?: string;
+  services: DigitalSolutionService[];
+}
+
+export interface DigitalSolutionsData {
+  intro: { headline: string; subhead: string };
+  gbpBenefits: string[];
+  complexityLadder?: string[];
+  categories: DigitalSolutionCategory[];
+  summary: { lines: string[]; depositNote?: string };
+  pricingDisclaimer: string;
 }

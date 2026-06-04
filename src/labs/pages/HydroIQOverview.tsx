@@ -37,7 +37,7 @@ export default function HydroIQOverview() {
     <LabsShell
       fillViewport
       title="Hydro IQ"
-      subtitle="A story about water, clean energy, and the infrastructure intelligence needed to bring hydro sites from screening to diligence."
+      subtitle="A story about water, clean energy, and the infrastructure intelligence needed to bring hydro sites from screening to due diligence."
       breadcrumb={[
         { label: "Labs", to: "/labs" },
         { label: "Hydro IQ" },
@@ -63,10 +63,10 @@ export default function HydroIQOverview() {
       <LabsSection
         id="prologue"
         title="Prologue — Why this story matters"
-        subtitle="Hydropower is not legacy infrastructure. It is grid flexibility, stored water energy, and one of the fastest paths to firm clean power — if we can diligence sites without drowning in fragmented data."
+        subtitle="Hydropower is not legacy infrastructure. It is grid flexibility, stored water energy, and one of the fastest paths to firm clean power — if we can evaluate sites without drowning in fragmented data."
       >
-        <LabsPanel className="overflow-hidden">
-          <div className="relative">
+        <LabsPanel>
+          <div className="relative overflow-hidden rounded-xl">
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-emerald-500/10 to-transparent" />
             <div className="relative space-y-6">
               <div className="flex flex-wrap items-center gap-3">
@@ -75,7 +75,7 @@ export default function HydroIQOverview() {
                   Hydro Site Selection, Financial Analysis &amp; Permitting Matrix
                 </span>
               </div>
-              <p className="max-w-3xl text-base leading-relaxed text-labs-textMuted md:text-lg">
+              <p className="max-w-4xl text-lg leading-relaxed text-labs-textMuted md:text-xl">
                 Every run-of-river intake, every closed-loop pumped-storage pair, every conduit
                 retrofit sits at the intersection of{" "}
                 <strong className="text-labs-text">water rights</strong>,{" "}
@@ -85,7 +85,11 @@ export default function HydroIQOverview() {
                 GIS scoring, financial screening, and a FERC routing engine — that an agent
                 orchestrates but never improvises.
               </p>
-              <EnergyFlowDiagram />
+              <div className="-mx-4 overflow-x-auto px-4 pb-1 snap-x snap-mandatory md:-mx-8 md:px-8">
+                <div className="mx-auto w-[min(100vw-2rem,56rem)] snap-center">
+                  <EnergyFlowDiagram />
+                </div>
+              </div>
             </div>
           </div>
         </LabsPanel>
@@ -99,19 +103,19 @@ export default function HydroIQOverview() {
       >
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <LabsPanel className="space-y-4">
-            <p className="text-base leading-relaxed text-labs-textMuted">
+            <p className="leading-relaxed text-labs-textMuted">
               Run-of-river and small hydro projects convert flowing water into decades of low-carbon
               generation. Pumped storage — closed-loop pairs with upper and lower reservoirs —
               provides the grid&apos;s largest-scale battery: arbitrage revenue from charging when
               prices are low and discharging when they spike.
             </p>
-            <p className="text-base leading-relaxed text-labs-textMuted">
+            <p className="leading-relaxed text-labs-textMuted">
               The US alone holds tens of thousands of greenfield PSH site pairs in research atlases.
               Each represents a potential node in a cleaner, more resilient grid — but only if
               developers can screen hydrology, interconnection, economics, and permit pathways
               before committing millions to field study.
             </p>
-            <blockquote className="border-l-4 border-cyan-500 pl-4 text-sm italic text-slate-700">
+            <blockquote className="border-l-4 border-cyan-500 pl-4 text-base italic text-slate-700">
               &ldquo;The atlas tells you where the pairs are; live APIs tell you whether the site
               is good today.&rdquo;
             </blockquote>
@@ -163,7 +167,7 @@ export default function HydroIQOverview() {
       >
         <ProcessComparison />
         <LabsPanel className="mt-6">
-          <p className="text-base leading-relaxed text-labs-textMuted">
+          <p className="leading-relaxed text-labs-textMuted">
             A development analyst cannot trust a black-box score in a regulated diligence context.
             They need every sub-score traced to a source and timestamp, every permit path tested
             against statute — not guessed by a language model — and every dollar figure labeled
@@ -182,7 +186,7 @@ export default function HydroIQOverview() {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <LabsPanel className="border-t-4 border-t-emerald-500 space-y-3">
             <h3 className="text-base font-bold text-labs-text">GIS &amp; Site Selection</h3>
-            <p className="text-sm leading-relaxed text-labs-textMuted">
+            <p className="text-base leading-relaxed text-labs-textMuted">
               ANU atlas skeleton plus live enrichment from USGS, HIFLD, PAD-US, IPaC, FEMA, and
               more. Five transparent dimensions with user-adjustable weights.
             </p>
@@ -190,7 +194,7 @@ export default function HydroIQOverview() {
           </LabsPanel>
           <LabsPanel className="border-t-4 border-t-sky-500 space-y-3">
             <h3 className="text-base font-bold text-labs-text">Financial Screening</h3>
-            <p className="text-sm leading-relaxed text-labs-textMuted">
+            <p className="text-base leading-relaxed text-labs-textMuted">
               LMP-spread arbitrage, interconnection capex from transmission distance, construction
               bands by cost class. IRA/ITC overlays as configurable reg params — not hardcoded.
             </p>
@@ -198,7 +202,7 @@ export default function HydroIQOverview() {
           </LabsPanel>
           <LabsPanel className="border-t-4 border-t-amber-500 space-y-3">
             <h3 className="text-base font-bold text-labs-text">Permitting Matrix</h3>
-            <p className="text-sm leading-relaxed text-labs-textMuted">
+            <p className="text-base leading-relaxed text-labs-textMuted">
               Deterministic rules engine tests every FERC primary track. Blocked paths shown with
               reasons. Cross-cutting authorizations sequenced: NEPA, §401, §404, ESA, §106.
             </p>
@@ -210,7 +214,7 @@ export default function HydroIQOverview() {
           <h3 className="mb-4 text-base font-bold text-labs-text">System architecture</h3>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <ArchitectureStack />
-            <div className="space-y-4 text-sm leading-relaxed text-labs-textMuted">
+            <div className="space-y-4 text-base leading-relaxed text-labs-textMuted">
               <p>
                 <strong className="text-labs-text">The agent&apos;s four jobs:</strong> gather facts
                 that feed the rules engine, disambiguate genuine ambiguity with cited reasoning,
@@ -244,7 +248,7 @@ export default function HydroIQOverview() {
           </LabsPanel>
           <LabsPanel className="space-y-4">
             <h3 className="text-base font-bold text-labs-text">Commercial narrative</h3>
-            <ul className="space-y-3 text-base text-labs-textMuted">
+            <ul className="space-y-3 text-labs-textMuted">
               <li>
                 <strong className="text-labs-text">Wedge:</strong> Permitting + finance +
                 geospatial in one workflow — not another Mapbox demo.
@@ -317,13 +321,13 @@ export default function HydroIQOverview() {
               className={`rounded-xl border-l-4 p-4 ${item.color} animate-[fadeIn_0.5s_ease-out]`}
             >
               <h4 className="text-sm font-bold text-labs-text">{item.title}</h4>
-              <p className="mt-2 text-sm leading-relaxed text-slate-700">{item.body}</p>
+              <p className="mt-2 text-base leading-relaxed text-slate-700">{item.body}</p>
             </div>
           ))}
         </div>
 
         <LabsPanel className="mt-6 space-y-4">
-          <p className="text-sm font-medium text-labs-warning">
+          <p className="text-base font-medium text-labs-warning">
             Screening-grade only — not bankable feasibility, legal, engineering, or financial
             advice. No site in the atlas has had geological, hydrological, or environmental study.
           </p>

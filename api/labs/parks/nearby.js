@@ -49,10 +49,16 @@ export default async function handler(req, res) {
     );
     return res.status(200).json(result);
   } catch (error) {
+    if (error?.code === "missing_api_key") {
+      return res.status(502).json({
+        error: "Google Places API key is not configured. Set GOOGLE_PLACES_API_KEY in environment variables.",
+        code: "missing_api_key",
+      });
+    }
     if (error?.status === 429) {
-      return res.status(429).json({ error: "Overpass rate limit exceeded" });
+      return res.status(429).json({ error: "Google Places rate limit exceeded" });
     }
     console.error("parks/nearby error:", error);
-    return res.status(502).json({ error: "Parks lookup unavailable" });
+    return res.status(502).json({ error: error?.message ?? "Parks lookup unavailable" });
   }
 }

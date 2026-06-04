@@ -9,7 +9,7 @@ export function LabsSection({ title, id, subtitle, children }) {
           {title}
         </h2>
         {subtitle != null && (
-          <p className="mt-1 max-w-3xl text-base text-labs-textMuted">{subtitle}</p>
+          <p className="mt-1 max-w-4xl text-lg text-labs-textMuted">{subtitle}</p>
         )}
       </header>
       {children}

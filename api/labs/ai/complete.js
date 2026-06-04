@@ -24,7 +24,10 @@ export default async function handler(req, res) {
     return res.status(200).json(result);
   } catch (error) {
     if (error?.status === 429) {
-      return res.status(429).json({ error: "OpenAI rate limit exceeded" });
+      return res.status(429).json({
+        error: error.message ?? "OpenAI rate limit exceeded",
+        code: error.code ?? "rate_limit",
+      });
     }
     console.error("ai/complete error:", error);
     return res.status(error?.status ?? 502).json({ error: "AI completion unavailable" });

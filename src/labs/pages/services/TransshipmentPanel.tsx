@@ -75,6 +75,8 @@ export function TransshipmentPanel() {
         ))}
       </div>
 
+      <TransshipmentLog events={events} />
+
       <svg
         viewBox="0 0 500 320"
         className="w-full rounded-lg border border-labs-border bg-slate-900/95"
@@ -128,9 +130,7 @@ export function TransshipmentPanel() {
         })}
       </svg>
 
-      <TransshipmentLog events={events} />
-
-      <p className="text-sm text-labs-textMuted">
+      <p className="text-base text-labs-textMuted">
         Read more about urban transshipment hubs in{" "}
         <Link to="/blog/transshipment" className="font-semibold text-labs-accent hover:text-labs-glow">
           this blog post
