@@ -1,6 +1,8 @@
 import type { LabsServiceMeta } from "../types";
+import { MapWorkbench } from "../maps/MapWorkbench";
+import { ParksFinderPanel } from "../pages/services/ParksFinderPanel";
 import { GoogleBusinessPanel } from "../pages/services/GoogleBusinessPanel";
-import { MapsShowcasePanel } from "../pages/services/MapsShowcasePanel";
+import { ParksFinderPanel } from "../pages/services/ParksFinderPanel";
 import { AiAssistantPanel } from "../pages/services/AiAssistantPanel";
 import { TransshipmentPanel } from "../pages/services/TransshipmentPanel";
 
@@ -12,10 +14,10 @@ export const LABS_SERVICES: LabsServiceMeta[] = [
     panel: GoogleBusinessPanel,
   },
   {
-    id: "maps-showcase",
-    title: "Custom Maps & GIS",
-    description: "5 live demos — energy site screener, CRE zoning, telecom, transit/AQI, field ops",
-    panel: MapsShowcasePanel,
+    id: "parks-finder",
+    title: "Nearest Parks Finder",
+    description: "Custom web maps — parks demo plus capabilities & business use cases",
+    panel: ParksFinderPanel,
   },
   {
     id: "ai-assistant",

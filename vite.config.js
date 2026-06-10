@@ -14,8 +14,17 @@ export default defineConfig(({ mode }) => {
         configureServer(server) {
           server.middlewares.use(async (req, res, next) => {
             if (!req.url?.startsWith('/api/labs')) return next()
-            const handled = await handleLabsApi(req, res, new URL(req.url, 'http://localhost'))
-            if (handled) return
+            try {
+              const handled = await handleLabsApi(req, res, new URL(req.url, 'http://localhost'))
+              if (handled || res.headersSent || res.writableEnded) return
+            } catch (error) {
+              if (!res.headersSent) {
+                res.statusCode = 500
+                res.setHeader('Content-Type', 'application/json')
+                res.end(JSON.stringify({ error: 'Internal server error' }))
+              }
+              return
+            }
             next()
           })
         },
