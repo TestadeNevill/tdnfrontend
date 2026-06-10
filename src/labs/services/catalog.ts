@@ -2,6 +2,7 @@ import type { LabsServiceMeta } from "../types";
 import { MapWorkbench } from "../maps/MapWorkbench";
 import { ParksFinderPanel } from "../pages/services/ParksFinderPanel";
 import { GoogleBusinessPanel } from "../pages/services/GoogleBusinessPanel";
+import { ParksFinderPanel } from "../pages/services/ParksFinderPanel";
 import { AiAssistantPanel } from "../pages/services/AiAssistantPanel";
 import { TransshipmentPanel } from "../pages/services/TransshipmentPanel";
 
@@ -14,14 +15,8 @@ export const LABS_SERVICES: LabsServiceMeta[] = [
   },
   {
     id: "parks-finder",
-    title: "Decision Map",
-    description: "Park & neighborhood intelligence — presets, layers, match scores & civic context",
-    panel: MapWorkbench,
-  },
-  {
-    id: "parks-finder-classic",
-    title: "Nearest Parks (Classic)",
-    description: "Original nearest parks demo with photos, hours, and directions",
+    title: "Nearest Parks Finder",
+    description: "Custom web maps — parks demo plus capabilities & business use cases",
     panel: ParksFinderPanel,
   },
   {
