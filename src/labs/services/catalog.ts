@@ -2,7 +2,7 @@ import type { LabsServiceMeta } from "../types";
 import { GoogleBusinessPanel } from "../pages/services/GoogleBusinessPanel";
 import { MapsShowcasePanel } from "../pages/services/MapsShowcasePanel";
 import { AiAssistantPanel } from "../pages/services/AiAssistantPanel";
-import { TransshipmentPanel } from "../pages/services/TransshipmentPanel";
+import { RouteIQPanel } from "../pages/services/RouteIQPanel";
 
 export const LABS_SERVICES: LabsServiceMeta[] = [
   {
@@ -24,10 +24,10 @@ export const LABS_SERVICES: LabsServiceMeta[] = [
     panel: AiAssistantPanel,
   },
   {
-    id: "transshipment",
-    title: "Transshipment Logistics",
-    description: "Animated hub schematic, multi-modal routes, event log",
-    panel: TransshipmentPanel,
+    id: "routeiq",
+    title: "RouteIQ Transit Explorer",
+    description: "Live GTFS transit explorer — real routes, stops & scheduled times via Transitland, with estimated ridership",
+    panel: RouteIQPanel,
   },
 ];
 

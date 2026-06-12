@@ -2,6 +2,17 @@ import type { LabsProjectMeta } from "./types";
 
 export const LABS_PROJECTS: LabsProjectMeta[] = [
   {
+    slug: "routeiq",
+    title: "RouteIQ — Live Transit Explorer",
+    description:
+      "Real-time transit explorer over live GTFS data (Transitland) — pick a city and route to see actual stops, scheduled times, the destination headsign, and estimated ridership per stop on a MapLibre map.",
+    route: "/labs?service=routeiq",
+    tags: ["Transit", "GIS", "GTFS", "MapLibre", "Transitland"],
+    status: "ok",
+    statusLabel: "Live demo",
+    external: false,
+  },
+  {
     slug: "hydro-matrix",
     title: "Hydro Site Selection & Permitting Matrix",
     description:

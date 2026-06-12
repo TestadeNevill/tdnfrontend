@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { LABS_PROJECTS } from "../catalog";
 import { LABS_SERVICES } from "../services/catalog";
 import { LabsSection } from "../components/LabsSection";
@@ -45,9 +45,22 @@ function ContactCtas({ subject }: ContactCtasProps) {
 }
 
 export default function LabsHome() {
-  const [activeServiceId, setActiveServiceId] = useState(LABS_SERVICES[0].id);
+  const [searchParams] = useSearchParams();
+  const requestedService = searchParams.get("service");
+  const initialServiceId =
+    requestedService != null && LABS_SERVICES.some((s) => s.id === requestedService)
+      ? requestedService
+      : LABS_SERVICES[0].id;
+  const [activeServiceId, setActiveServiceId] = useState(initialServiceId);
   const activeService = LABS_SERVICES.find((s) => s.id === activeServiceId) ?? LABS_SERVICES[0];
   const hydroSubject = LABS_PROJECTS[0].title;
+
+  useEffect(() => {
+    if (requestedService != null && LABS_SERVICES.some((s) => s.id === requestedService)) {
+      setActiveServiceId(requestedService);
+      document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [requestedService]);
 
   return (
     <LabsShell

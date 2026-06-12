@@ -17,6 +17,7 @@ export interface LabsProjectMeta {
   tags: string[];
   status: LabsStatusVariant;
   statusLabel: string;
+  external?: boolean;
 }
 
 export interface ParkDetail {

@@ -5,6 +5,7 @@ import { fetchIsochrone } from "../_lib/openRouteService.js";
 import { fetchWeather } from "../_lib/nws.js";
 import { fetchAqi } from "../_lib/airnow.js";
 import { fetchTransit } from "../_lib/transitland.js";
+import { fetchTransitOperators, fetchTransitRoutes, fetchTransitTrip } from "../_lib/transitExplorer.js";
 import { fetchCivic311 } from "../_lib/socrata.js";
 import { fetchAccessibility } from "../_lib/accessibility.js";
 import { fetchIncidents } from "../_lib/incidents.js";
@@ -22,6 +23,9 @@ const LAYER_HANDLERS = {
   weather: { fetch: fetchWeather, useBbox: false },
   aqi: { fetch: fetchAqi, useBbox: false },
   transit: { fetch: fetchTransit, useBbox: true },
+  "transit-operators": { fetch: fetchTransitOperators, raw: true },
+  "transit-routes": { fetch: fetchTransitRoutes, raw: true },
+  "transit-trip": { fetch: fetchTransitTrip, raw: true },
   civic311: { fetch: fetchCivic311, useBbox: true },
   accessibility: { fetch: fetchAccessibility, useBbox: false },
   incidents: { fetch: fetchIncidents, useBbox: true },
@@ -48,6 +52,17 @@ export async function handleMapsApi(req, res, layerId) {
   }
 
   try {
+    // Raw handlers manage their own params (no lat/lng/bbox normalization).
+    if (config.raw) {
+      const url = new URL(req.url, "http://localhost");
+      const query = Object.fromEntries(url.searchParams.entries());
+      let body = {};
+      if (req.method === "POST") body = await readJsonBody(req);
+      const params = { ...query, ...(body.filters ?? {}), ...body };
+      const result = await config.fetch(params);
+      return sendJson(res, 200, result);
+    }
+
     let body = {};
     if (req.method === "POST") {
       body = await readJsonBody(req);

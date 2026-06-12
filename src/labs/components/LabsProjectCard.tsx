@@ -26,12 +26,23 @@ export function LabsProjectCard({ project }: LabsProjectCardProps) {
           </span>
         ))}
       </div>
-      <Link
-        to={project.route}
-        className="mt-4 inline-flex w-fit items-center rounded-md border border-labs-accent/40 bg-labs-accent/10 px-3 py-1.5 text-sm font-semibold text-labs-accent transition-colors hover:bg-labs-accent/20"
-      >
-        Open demo →
-      </Link>
+      {project.external ? (
+        <a
+          href={project.route}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex w-fit items-center rounded-md border border-labs-accent/40 bg-labs-accent/10 px-3 py-1.5 text-sm font-semibold text-labs-accent transition-colors hover:bg-labs-accent/20"
+        >
+          View project →
+        </a>
+      ) : (
+        <Link
+          to={project.route}
+          className="mt-4 inline-flex w-fit items-center rounded-md border border-labs-accent/40 bg-labs-accent/10 px-3 py-1.5 text-sm font-semibold text-labs-accent transition-colors hover:bg-labs-accent/20"
+        >
+          Open demo →
+        </Link>
+      )}
     </article>
   );
 }
